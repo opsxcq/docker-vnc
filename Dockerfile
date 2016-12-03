@@ -24,6 +24,8 @@ EXPOSE 5900
 VOLUME /data
 WORKDIR /data
 
+COPY main.sh /
+
 ENTRYPOINT ["/main.sh"]
 CMD ["default"]
 
