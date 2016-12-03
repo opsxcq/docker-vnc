@@ -19,6 +19,7 @@ RUN useradd remote --create-home --shell /bin/bash --user-group --groups adm,sud
     echo "remote:$VNCPASS" | chpasswd
 
 EXPOSE 80
+EXPOSE 5900
 
 VOLUME /data
 WORKDIR /data
