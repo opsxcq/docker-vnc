@@ -16,7 +16,7 @@ then
     x11vnc -storepasswd $VNC_PASSWORD /root/.vnc/passwd
 fi
 
-Xvfb -screen 0 800x600x16 -ac &
+Xvfb -screen 0 900x900x16 -ac &
 sleep 15
 env DISPLAY=:0.0 x11vnc -noxrecord -noxfixes -noxdamage -forever -display :0 &
 env DISPLAY=:0.0 fluxbox 
