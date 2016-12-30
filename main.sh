@@ -13,7 +13,7 @@ fi
 if [ ! -f /root/.vnc/passwd ]
 then
     mkdir /root/.vnc
-    x11vnc -storepasswd test /root/.vnc/passwd
+    x11vnc -storepasswd $VNC_PASSWORD /root/.vnc/passwd
 fi
 
 Xvfb -screen 0 800x600x16 -ac &
